@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .song {
+                margin-left: 50px;
+                text-align: center;
+            }
+            .task{
+                margin-top: 30px;
+                margin-left: 450px;
+                width: 600px;
+                height: 400px;
+                background-color: black ;
+            }
+            #border{
+                margin-left: 20px;
+                border-left:5px solid white;
+                border-bottom:5px solid white;
+                width: 600px;
+                height: 350px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            .graph1{
+                animation-name: one;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction:alternate-reverse ;
+
+            }
+            @keyframes one {
+                from{
+                    height:3 0px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to{
+                    height: 100px;
+                }
+            }
+            .graph2{
+                animation-name: two;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse ;
+
+            }
+            @keyframes two{
+                from{
+                    height:290px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to {
+                    height: 20px;
+                }
+            }
+            .graph3{
+                animation-name: three;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse ;
+
+            }
+            @keyframes three{
+                from{
+                    height:70px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to {
+                    height: 210px;
+                }
+            }
+            .graph4{
+                animation-name: four;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse ;
+
+            }
+            @keyframes four{
+                from{
+                    height:120px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to {
+                    height: 40px;
+                }
+            }
+            .graph5{
+                animation-name: five;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse ;
+
+            }
+            @keyframes five{
+                from{
+                    height:220px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to {
+                    height: 100px;
+                }
+            }
+            .graph6{
+                animation-name: six;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse ;
+
+            }
+            @keyframes six{
+                from{
+                    height:0px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to {
+                    height: 140px;
+                }
+            }
+            .graph7{
+                animation-name: seven;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse ;
+
+            }
+            @keyframes seven{
+                from{
+                    height:220px; 
+                    width: 30px; 
+                    background-color: red
+                }
+                to {
+                    height: 280px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="song">
+             <img src="data:image/jpeg;base64,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" alt=""
+            width="450" height="300"> 
+            <h1>&#128293;Salaar</h1>
+            <h3>Description</h3>
+        <p>
+            Set in the fictional dystopian city-state of Khansaar, where Monarchy still exists. The film follows the friendship between Deva (Prabhas), the exiled prince of Khansaar, and Varadha (Prithviraj), the current prince of Khansaar
+        </p>
+        
+        
+            <summary>03. Sound of Salaar </summary>
+            <audio controls>
+                <source src="./Sound of Salaar.mp3">
+            </audio><br>
+            Download.128 Kbps <br>
+            <a href="./Sound of Salaar.mp3" download="salaar bgm"> <button>Download</button></a>
+        
+        </div>
+        <div class="task">
+            <div id="border" >
+                <div class="graph1" style="height:130px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 20px;">
+
+                </div>
+                <div class="graph2" style="height:190px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 80px;">
+
+                </div>
+                <div class="graph3" style="height:70px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 150px;">
+
+                </div>
+                <div class="graph4" style="height:120px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 220px;">
+
+                </div>
+                <div class="graph5" style="height:220px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 290px;">
+
+                </div>
+                <div class="graph6" style="height:0px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 360px;">
+
+                </div>
+                <div class="graph7" style="height:230px; width: 30px; background-color: red; position: absolute;bottom:0px;left: 420px;">
+
+                </div>
+
+                
+            </div>
+            
+        </div>
+
+    </body>
+</html>
+
+
+
+
+
+
